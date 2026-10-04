@@ -1,0 +1,41 @@
+{
+  "name": "roamly-world-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "data": "node scripts/prepare-data.mjs",
+    "test": "node --import tsx --test tests/core.test.ts"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "d3-geo": "^3.1.1",
+    "topojson-client": "^3.1.0",
+    "lucide-react": "^0.577.0",
+    "@supabase/supabase-js": "^2.99.0",
+    "lz-string": "^1.5.0",
+    "jspdf": "^4.2.0",
+    "@fontsource/dm-sans": "^5.2.8",
+    "@fontsource/manrope": "^5.2.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/d3-geo": "^3.1.0",
+    "@types/topojson-client": "^3.1.5",
+    "world-atlas": "^2.0.2",
+    "world-countries": "5.1.0",
+    "country-state-city": "^3.2.1",
+    "tsx": "^4.21.0"
+  }
+}
